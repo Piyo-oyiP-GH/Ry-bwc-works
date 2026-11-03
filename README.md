@@ -13,3 +13,4 @@
 
 - [スケジュール](schedule.md)
 - [決定事項ログ](decisions.md)
+- [進め方（考案と実装を分ける）](process.md)
