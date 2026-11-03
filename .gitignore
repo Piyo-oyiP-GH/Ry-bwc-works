@@ -4,6 +4,10 @@
 # 動画ファイル
 *.mp4
 *.mov
+*.webm
+*.wav
+*.mp3
+*.m4a
 
 # OS
 .DS_Store
