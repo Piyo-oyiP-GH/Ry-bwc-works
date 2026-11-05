@@ -10,3 +10,5 @@ claude.ai のアーティファクトは**非公開**（本人だけ開ける）
 | 11/05 | いまどこにいる？ハッカソン現在地 | アーティファクト | https://claude.ai/artifact/6ReGmvftKxDRuQ9kqfuLXE | 進め方の整理・デモ動画の構成 |
 | 11/05 | koma1-5_3d_test.mp4 | 動画 | チャット内で受け取り（PCのみ） | 15秒・1920×1080 |
 | 11/05 | video-skill-router.zip | ファイル | チャット内で受け取り（PCのみ） | ルーティング表・skill-router・試験結果 |
+| 11/05 | 動画スキル比較実験：何を確かめるのか | アーティファクト | https://claude.ai/artifact/2L7Z7haA8vgzQVViaNHLZW | 実験の設計。結果が出たら更新 |
+| 11/05 | video-skill-experiment-kit.zip | ファイル | チャット内で受け取り（PCのみ） | PC の Claude Code に渡す実験キット |
