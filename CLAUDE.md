@@ -13,6 +13,9 @@
 
 ## 作業を終えるとき（必ず。役割を問わない）
 
+- **クラウドのセッション**（claude.ai・Codex など、PC の外）：下のとおり `log/YYYY-MM-DD.md` に直接追記する
+- **PC の試作のセッション**：PC 側の CLAUDE.md（`Claude hackathon/CLAUDE.md`）のとおり、試作フォルダの `記録.md` に書く。1日の終わりに1回、まとめて `log/` に写す（PCのみ。試作中は Ry-bwc-works に書き込まないため）
+
 `log/YYYY-MM-DD.md` に1ブロック追記する。ファイルがなければ [log/README.md](log/README.md) のひな形で作る。
 
 - 書くのは**素材**でよい。きれいにまとめなくてよい（後でまとめ直す）
