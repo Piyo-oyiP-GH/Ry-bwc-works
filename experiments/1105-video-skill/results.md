@@ -52,6 +52,6 @@
 
 ## ファイル
 
-- 動画：`videos/`（PCのみ）
+- 動画：`試作/1106_動画スキル実験/results/videos/`（PCのみ）
 - 一覧：`sheets/`　採点：`review_sonnet.md`・`review_opus.md`　伏せの対応：`blind_key.json`
 - 使ったスキル：`USED_SKILLS_video1.md`・`USED_SKILLS_video2.md`　判断係：`judge_log.md`　判断の記録：`log.md`
