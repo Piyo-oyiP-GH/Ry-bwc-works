@@ -52,7 +52,7 @@
 
 **使わない方がいいスキル**
 - `remotion-*`（markup、3d.md、light-leaks.md など）は、HyperFrames と流儀が混ざるので避けます。
-- `huashu-art-motion` は、`53_pixar.md` と `toon.js` を柔らかい質感の参考として読むだけにします。エンジンごとは持ち込みません。
+- `huashu-art-motion` は、参考の文書と `toon.js` を柔らかい質感の参考として読むだけにします。エンジンごとは持ち込みません。
 - `remotion-to-hyperframes` は、移植ではないので不要です。
 - `gsap` は、明滅やタイムラインのときだけ補助で使います。
 

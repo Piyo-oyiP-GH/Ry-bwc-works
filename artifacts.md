@@ -7,7 +7,7 @@ claude.ai のアーティファクトは**非公開**（本人だけ開ける）
 |---|---|---|---|---|
 | 11/05 | 絵コンテ（AI連携） | アーティファクト | https://claude.ai/artifact/DTeYYhTwnTKukaH7HJpRVH | 他チャットからも読み書きできる。紙の絵コンテ7コマを登録済み |
 | 11/05 | 3D動画テスト：古い写真とカセット | アーティファクト | https://claude.ai/artifact/5XHZbWzxiUCAFBp7ULU5dh | カセット・写真立ての 3D モデル |
-| 11/06 | 動画スキル比較の結果 | ファイル | [experiments/1105-video-skill/results.md](experiments/1105-video-skill/results.md)、動画は `試作/1106_動画スキル実験/results/videos/`（PCのみ） | 多数＋判断係と厳選3つの比較 |
+| 11/06 | 動画スキル比較の結果 | ファイル | [experiments/1105-video-skill/results.md](experiments/1105-video-skill/results.md)、動画は `試作/1106_動画スキル実験/results/videos/`（PCのみ） | デモ動画のためのテスト。形の情報は与えすぎないほうがよいと分かった |
 | 11/05 | いまどこにいる？ハッカソン現在地 | アーティファクト | https://claude.ai/artifact/6ReGmvftKxDRuQ9kqfuLXE | 進め方の整理・デモ動画の構成 |
 | 11/05 | koma1-5_3d_test.mp4 | 動画 | チャット内で受け取り（PCのみ） | 15秒・1920×1080 |
 | 11/05 | video-skill-router.zip | ファイル | チャット内で受け取り（PCのみ） | ルーティング表・skill-router・試験結果 |
