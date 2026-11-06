@@ -1,0 +1,4 @@
+video2 build rc=0 秒=295 11:44:28
+video1 build rc=0 秒=377 11:45:45
+video2 fix rc=0 秒=67 11:45:48
+video1 fix rc=0 秒=94 11:47:35

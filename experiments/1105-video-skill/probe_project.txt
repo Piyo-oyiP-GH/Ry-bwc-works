@@ -1,0 +1,21 @@
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+gsap
+hyperframes
+hyperframes-cli
+demo-assets
+dataviz
+artifact-design
+artifact-diagramming
+artifact-capabilities
+update-config
+keybindings-help
+code-review
+simplify
+fewer-permission-prompts
+loop
+schedule
+claude-api
+run
+plugin-authoring
+init
+security-review

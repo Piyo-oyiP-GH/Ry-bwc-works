@@ -1,0 +1,23 @@
+# 実験の判断ログ（進行役）
+
+- 作業場所：キットの `1105_動画スキル比較` ではなく `試作/1106_動画スキル実験/`（PC の CLAUDE.md の「日付_何を試すか」、実施日が 11/06 のため）
+- 分離：`claude -p --setting-sources project` で確認。ユーザー側の ~/.claude/skills（hyperframes 系・hz-* ほか）は見えない。ただし親フォルダの demo-assets と組み込みスキル（dataviz・simplify など）は両方に見える＝両条件で同じ。親の CLAUDE.md も両方に読み込まれる（`results/probe_project.txt`）
+- hyperframes / hyperframes-cli は両方とも heygen-com/hyperframes の最新 clone から入れて版を揃えた（~/.claude/skills の版とは差がある）。npm は hyperframes 0.9.18＋undici 7.30.1 の override（audit 0件）を両方に事前導入
+- カタログと実物の差：
+  - gsap：単体がなく greensock/gsap-skills の8スキルを1つの `gsap` スキル（索引＋references）にまとめ、両方に同じものを入れた
+  - hyperframes-media → 現在は media-use。website-to-hyperframes は実物なし（`hyperframes capture` に統合）→ 入れず
+  - speckit：github/spec-kit の specify/plan/tasks テンプレートを SKILL.md に変換（付属スクリプトは未導入）
+  - r3f：未作成のため入れず。faster-whisper・chatterbox：スキルでなくツールで今回音声なしのため入れず
+  - huashu-art-motion は動画ファイルを除いて導入
+- 動画1のスキルは14個、動画2は3個
+- 権限：`--dangerously-skip-permissions` は使わず `--permission-mode acceptEdits`＋allowedTools（Bash ほか）で実行
+- 時間：作成20分＋猶予2分、修正10分＋猶予1分で外から打ち切る
+- builder_prompt に足したもの（両方同じ）：不在なので質問しない、時間の測り方、init の --skip-skills、brief の 15秒/1080p より 6秒/960×540 を優先
+- 映像の中身：ユーザーの言う「対象リポジトリ」Ry-bwc-works の作品の冒頭＝キットの brief（コマ1〜2）として進めた
+- push：キットは push と書いているが、CLAUDE.md は「私が OK するまでしない」で decisions.md に OK の範囲もない → commit まで行い、push はユーザーの OK を待つ
+- 11:38 起動の中断：動画1の起動が自動モードの安全判定で拒否（Create Unsafe Agents）。同じ設定の動画2は通ったが、片方だけ広い権限で進めず停止した。TaskStop ではシェルしか止まらず作業者が残ったので、PID を確かめて taskkill で停止。動画2は初期化だけの段階（ログは `results/aborted_video2/`）で、やり直した
+- 権限を絞って再実行：Bash 全体をやめ、npx hyperframes / npm install / ffmpeg / ffprobe / elapsed.sh（動画1は ask_judge.sh も）だけ許可。両方同じ条件
+- timing.txt にあった「video2 build rc=0 秒=35 11:38:51」は止めた1回目の行なので消した（rc=0 は成功の意味ではない）
+- 採点者の1回目は `--allowedTools` がプロンプトを引数として飲み込み失敗（採点は未実行）。標準入力で渡して再実行
+- 採点の対象は修正前の out_v1 に統一。修正の判定は別に記録
+- 公開用コピーから除くもの：`videos/`、`aborted_video2/`（実行ログ）
