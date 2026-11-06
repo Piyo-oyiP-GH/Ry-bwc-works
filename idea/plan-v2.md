@@ -42,7 +42,7 @@
 
 **読み違いの防ぎ方**
 
-- B の固有名詞や年が A／A2 にないときは、見立てに下げる
+- B の固有名詞や年が A／A2 にないときは、見立てに下げる。読めていない綴りを言い切る文は消す
 - 「大切、貴重、捨て」は検出して作り直す。だめなら消す
 - 「読めた／見えた／Claude の見立て」を分けて、写真と並べて出す
 - 「違う」ボタンで、家族の訂正を優先する
@@ -58,7 +58,8 @@
 
 **人物の仮説**：キューは同時実行1。5枚ごとか60秒で更新する。入力は今のカード、新しい写真、A/B の結果。出力は追加、更新、取り下げの差分。関連する物の番号の実在をコードで確かめる。
 
-- 強さは、関連する物の数で決める（写真の有無は問わない）。1〜2個＝弱、3〜9個＝中、10個以上＝強め。2個は読み違いで偶然つながる可能性があるので弱い。数えるのは、確からしさが「はっきり」の読みだけ
+- 強さは、関連する物の数で決める（写真の有無は問わない）。1〜2個＝弱、3〜9個＝中、10個以上＝強め。2個は読み違いで偶然つながる可能性があるので弱い
+- 数えるのは「はっきり」の読みと、見えた物。読みが根拠のつながりは「はっきり」だけを数える。物の種類や見た目が根拠のつながりは「見えた物」として別に数える（字の無い物も10個で強めになる）。字の引用を含む見えたことと、読みにくい物の見えたことは数えない
 - 家族のメモは「家族が書いた」として扱い、写真の根拠の数には入れない
 
 ## 4. データ
@@ -74,9 +75,9 @@
 | invites | project_id, display_name, token_hash, revoked_at |
 | sessions | id, user_id, expires_at |
 | items | id, project_id, seq, status, title, r2_key, confidence, rank_score, rank_reason, search_terms, pile, updated_at |
-| persons | id, project_id, subtype（owner/friend/vague）, label, merged_into |
+| persons | id, project_id, subtype（owner/relative/friend/vague）, label, merged_into |
 | claims | id, project_id, person_id, source（photo/family/claude）, text, strength, author_user_id, superseded_at |
-| claim_items | claim_id, item_id |
+| claim_items | claim_id, item_id, clear, seen |
 | waits | project_id, item_id, user_id, created_at, withdrawn_at（UNIQUE item_id, user_id） |
 
 - 「残す」は保存しない。有効な wait があるかで決まる
